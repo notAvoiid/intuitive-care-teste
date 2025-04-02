@@ -97,9 +97,9 @@ LIMIT 10;
 
 /*
 
-wget -r -np -nd -A ".zip,.csv" -P downloads https://dadosabertos.ans.gov.br/FTP/PDA/demonstracoes_contabeis/2024/ && unzip 'downloads/*.zip' -d downloads && rm -f downloads/*.zip
 wget -r -np -nd -A "*.csv" -P downloads https://dadosabertos.ans.gov.br/FTP/PDA/operadoras_de_plano_de_saude_ativas/ && unzip 'downloads/*.zip' -d downloads && rm -f downloads/*.zip
 wget -r -np -nd -A "*.zip,*.csv" -P downloads https://dadosabertos.ans.gov.br/FTP/PDA/demonstracoes_contabeis/2024/ && unzip 'downloads/*.zip' -d downloads && rm -f downloads/*.zip
+wget -r -np -nd -A ".zip,.csv" -P downloads https://dadosabertos.ans.gov.br/FTP/PDA/demonstracoes_contabeis/2023/ && unzip 'downloads/*.zip' -d downloads && rm -f downloads/*.zip
 
 cp ${CAMINHO_ABSOLUTO}/downloads/Relatorio_cadop.csv /tmp/
 cp ${CAMINHO_ABSOLUTO}/downloads/4T2024.csv /tmp/
